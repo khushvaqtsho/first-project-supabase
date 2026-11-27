@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsx src/index.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "load": "tsx src/load.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,10 +15,13 @@
   "type": "module",
   "dependencies": {
     "@supabase/supabase-js": "^2.119.2",
-    "dotenv": "^18.0.10"
+    "csv-parse": "^7.0.3",
+    "dotenv": "^18.0.10",
+    "pg": "^8.23.1"
   },
   "devDependencies": {
     "@types/node": "^26.6.11",
+    "@types/pg": "^8.23.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
